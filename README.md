@@ -47,11 +47,11 @@ Hệ thống quản lý đơn hàng và sản phẩm được xây dựng theo k
 ### 1. Product Service (Port 9006)
 
 **Chức năng:**
-- ✅ Quản lý sản phẩm (CRUD)
-- ✅ Quản lý giá và mô tả
-- ✅ Quản lý tồn kho
-- ✅ Increase/Decrease stock API
-- ✅ Active/Inactive products
+-  Quản lý sản phẩm (CRUD)
+-  Quản lý giá và mô tả
+-  Quản lý tồn kho
+-  Increase/Decrease stock API
+-  Active/Inactive products
 
 **Database:** ProductDB
 - Table: Products
@@ -68,11 +68,11 @@ Hệ thống quản lý đơn hàng và sản phẩm được xây dựng theo k
 ### 2. Order Service (Port 9005)
 
 **Chức năng:**
-- ✅ Quản lý đơn hàng (CRUD)
-- ✅ Tích hợp với Product Service
-- ✅ Kiểm tra tồn kho tự động
-- ✅ Cập nhật tồn kho khi tạo/hủy đơn
-- ✅ Quản lý trạng thái đơn hàng
+-  Quản lý đơn hàng (CRUD)
+-  Tích hợp với Product Service
+-  Kiểm tra tồn kho tự động
+-  Cập nhật tồn kho khi tạo/hủy đơn
+-  Quản lý trạng thái đơn hàng
 
 **Database:** OrderDB
 - Tables: Orders, OrderItems
@@ -94,13 +94,13 @@ Hệ thống quản lý đơn hàng và sản phẩm được xây dựng theo k
 - Accent: `#4a7c26`
 
 ### Tính năng giao diện
-- ✅ Responsive design
-- ✅ Navigation menu giữa 2 services
-- ✅ Statistics cards
-- ✅ Filter và search
-- ✅ Modal forms
-- ✅ Toast notifications
-- ✅ Real-time updates
+-  Responsive design
+-  Navigation menu giữa 2 services
+-  Statistics cards
+-  Filter và search
+-  Modal forms
+-  Toast notifications
+-  Real-time updates
 
 ## Cài đặt và chạy
 
@@ -321,68 +321,27 @@ taskkill /PID <PID> /F
 ## Best Practices được áp dụng
 
 ### Architecture
-- ✅ Loosely coupled services
-- ✅ Single Responsibility Principle
-- ✅ RESTful API design
-- ✅ Service independence
+-  Loosely coupled services
+-  Single Responsibility Principle
+-  RESTful API design
+-  Service independence
 
 ### Code Quality
-- ✅ Document comments cho tất cả classes
-- ✅ Error handling đầy đủ
-- ✅ Logging chi tiết
-- ✅ Input validation
+-  Document comments cho tất cả classes
+-  Error handling đầy đủ
+-  Logging chi tiết
+-  Input validation
 
 ### Database
-- ✅ Transaction management
-- ✅ Foreign key constraints
-- ✅ Indexes cho performance
-- ✅ Connection pooling
+-  Transaction management
+-  Foreign key constraints
+-  Indexes cho performance
+-  Connection pooling
 
 ### Security
-- ✅ SQL Injection prevention (PreparedStatement)
-- ✅ XSS prevention (HTML escaping)
-- ✅ Input validation
-- ⚠️ Authentication/Authorization (nên thêm trong production)
-
-## Mở rộng trong tương lai
-
-1. **Authentication & Authorization**
-   - JWT token implementation
-   - Role-based access control
-
-2. **Message Queue**
-   - RabbitMQ/Kafka cho async communication
-   - Event-driven architecture
-
-3. **Caching**
-   - Redis cho product catalog
-   - Cache invalidation strategies
-
-4. **Monitoring**
-   - ELK Stack cho logging
-   - Prometheus + Grafana cho metrics
-
-5. **API Gateway**
-   - Centralized routing
-   - Rate limiting
-   - Load balancing
-
-6. **Additional Services**
-   - Payment Service
-   - Notification Service
-   - Inventory Service
-   - Customer Service
-
-## Đóng góp
-
-Nếu bạn muốn đóng góp cho dự án:
-
-1. Fork repository
-2. Tạo branch: `git checkout -b feature/amazing-feature`
-3. Commit: `git commit -m 'Add amazing feature'`
-4. Push: `git push origin feature/amazing-feature`
-5. Tạo Pull Request
-
+-  SQL Injection prevention (PreparedStatement)
+-  XSS prevention (HTML escaping)
+-  Input validation
 ## License
 
 Dự án này được phát triển cho mục đích học tập và nghiên cứu.
@@ -401,16 +360,9 @@ Dự án này được phát triển cho mục đích học tập và nghiên c�
 - **Scala Templates**: Server-side templating
 - **SBT**: Build tool
 
-## Liên hệ
-
-- Email: support@example.com
-- Issues: GitHub Issues
-
----
 
 **Lưu ý quan trọng:**
 - Đảm bảo chạy Product Service trước Order Service
 - Luôn backup database trước khi thực hiện thay đổi lớn
 - Kiểm tra logs khi gặp lỗi: `logs/application.log`
 
-Chúc bạn thành công!
