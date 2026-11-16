@@ -1,0 +1,38 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.HomeController.index()
+
+# Product Management Page
+GET     /products/manage            controllers.ProductController.managePage(request: Request)
+
+# ===== REST API Endpoints =====
+
+# Health Check
+GET     /api/products/health        controllers.ProductController.health(request: Request)
+
+# Get all products
+GET     /api/products               controllers.ProductController.getAllProducts(request: Request)
+
+# Get product by ID
+GET     /api/products/:id           controllers.ProductController.getProductById(request: Request, id: Integer)
+
+# Create new product
+POST    /api/products               controllers.ProductController.createProduct(request: Request)
+
+# Update product
+PUT     /api/products/:id           controllers.ProductController.updateProduct(request: Request, id: Integer)
+
+# Delete product
+DELETE  /api/products/:id           controllers.ProductController.deleteProduct(request: Request, id: Integer)
+
+# Decrease stock
+POST    /api/products/:id/decrease-stock    controllers.ProductController.decreaseStock(request: Request, id: Integer)
+
+# Increase stock
+POST    /api/products/:id/increase-stock    controllers.ProductController.increaseStock(request: Request, id: Integer)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

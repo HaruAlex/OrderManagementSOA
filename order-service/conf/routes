@@ -1,0 +1,38 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.HomeController.index()
+
+# Order Management Page
+GET     /orders/manage              controllers.OrderController.managePage(request: Request)
+
+# ===== REST API Endpoints =====
+
+# Health Check
+GET     /api/orders/health          controllers.OrderController.health(request: Request)
+
+# Get all orders
+GET     /api/orders                 controllers.OrderController.getAllOrders(request: Request)
+
+# Get orders by status
+GET     /api/orders/status/:status  controllers.OrderController.getOrdersByStatus(request: Request, status: String)
+
+# Get order by ID
+GET     /api/orders/:id             controllers.OrderController.getOrderById(request: Request, id: Long)
+
+# Create new order
+POST    /api/orders                 controllers.OrderController.createOrder(request: Request)
+
+# Update order
+PUT     /api/orders/:id             controllers.OrderController.updateOrder(request: Request, id: Long)
+
+# Update order status
+PATCH   /api/orders/:id/status      controllers.OrderController.updateOrderStatus(request: Request, id: Long)
+
+# Delete order
+DELETE  /api/orders/:id             controllers.OrderController.deleteOrder(request: Request, id: Long)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

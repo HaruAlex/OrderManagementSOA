@@ -1,0 +1,129 @@
+# SBT
+target/
+project/target/
+project/project/target/
+dist/
+.cache
+.classpath
+.project
+.settings/
+*.class
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+*.iml
+*.iws
+*.ipr
+
+# Play Framework
+logs/
+project/plugins/project/
+.h2.server.properties
+bin/
+.playSettings
+*.pid
+*.pid.lock
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db
+.directory
+.Spotlight-V100
+.Trashes
+
+# Environment
+.env
+.env.local
+*.pem
+*.key
+*.pub
+
+# Build artifacts
+build/
+out/
+*.jar
+*.war
+*.ear
+
+# Node (if frontend uses npm)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+
+# Maven (if using)
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle (if using)
+.gradle/
+gradle-wrapper.jar
+.gradletasknamecache
+
+# Editor temporary files
+.#*
+*#
+.sublime-project
+.sublime-workspace
+
+# Test coverage
+coverage/
+.coverage
+htmlcov/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*.rej
+
+# Lock files (optional, comment out if you want to keep them)
+# Gemfile.lock
+# package-lock.json
+# yarn.lock
+
+# Sensitive files
+*.pem
+*.key
+*.crt
+secrets/
+.credentials
+
+# IDE specific
+.vscode/settings.json
+.vscode/extensions.json
+.idea/runConfigurations/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/misc.xml
+.idea/codeStyles/
+.idea/encodings.xml
+
+# SBT specific
+.sbtrc
+repository/
